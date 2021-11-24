@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ("../partials/head") %>
+</head>
+<body>
+    <%- include ("../partials/header") %>
+    <h2 class="formText">Ingresa a tu cuenta</h2>
+    
+    <form class="formaDeAcceso">
+        <p class="insideText">¡Accede para ingresar a tu cuenta y comenzar a vender!</p>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fas fa-user"></i>
+                <input type="text" name="usuario" class="campo" placeholder="Ingrese su nombre de usuario">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-unlock"></i>
+                <input type="password" name="contraseña" class="campo" placeholder="Ingrese su contraseña">
+            </div>
+            <input type="submit" value="Ingresar" class="botonesRL">
+        </div>
+    </form>
+
+    <hr id="separador">
+
+    <h2 class="formText">Crea una cuenta</h2>
+
+    <form class="formaDeRegistro">
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fas fa-id-card"></i>
+                <input type="text" name="nombreCompleto" class="campo" placeholder="Ingrese su nombre completo">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-user"></i>
+                <input type="text" name="usuario" class="campo" placeholder="Ingrese su nombre de usuario">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" class="campo" placeholder="Ingrese su dirección de email">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-unlock"></i>
+                <input type="password" name="contraseña" class="campo" placeholder="Ingrese una contraseña">
+            </div>
+
+            <input type="submit" value="Registrar" class="botonesRL">
+            <p class="insideText">Al registrarte, aceptas nuestras condiciones de uso, y política de privacidad.</p>
+        </div>
+    </form>
+    <%- include ("../partials/footer") %>
+</body>
+</html>

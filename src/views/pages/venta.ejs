@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ("../partials/head") %>
+</head>
+<body>
+    <%- include ("../partials/header") %>
+    <h2 class="formText">¿Que estas vendiendo?</h2>
+    <hr>
+    <form class="formaDeVenta">
+        <p class="insideText">Describe el producto que estas vendiendo</p>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <input type="text" name="producto" class="campo" placeholder="Ej: taza de rueda VW Gol">
+            </div>
+            <div class="input-contenedor">
+                <input type="text" name="descripcion" class="campo" placeholder="Descripción del articulo">
+            </div>
+            <div class="input-contenedor">
+                <input type="number" name="precio" class="campo" placeholder="$">
+            </div>
+            <div class="subida">
+                <form name="subida-imagenes" type="POST" enctype="multipart/formdata" class="subida">
+                    <input type="file" name="imagen1" />
+                </form>
+            </div>
+            <input type="submit" value="Poner en venta" id="ponerEV" class="botonesRL">
+        </div>
+    </form>
+    <%- include ("../partials/footer") %>
+</body>
+</html>

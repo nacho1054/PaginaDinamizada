@@ -1,0 +1,477 @@
+*{
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-image: linear-gradient(160deg, rgb(20, 15, 15) 33%, red, rgb(20, 15, 15));
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Header {
+    background: linear-gradient(to bottom right, black 20%, red, black);
+    height: 140px;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: auto;
+    width: 100%;
+    z-index: 1;
+}
+
+.Nav-menu-link {
+    color: black;
+    text-decoration: none;
+}
+
+.Logo {
+    margin: 20px 20px;
+    border: rgb(93, 93, 93) solid 1px;
+    border-radius: 5px;
+    width: 249px;
+    height: 98px;
+    box-shadow: black 2px 4px 10px 0px;
+}
+
+.Nav-menu {
+    display: flex;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.Nav-menu-item {
+    font-size: 40px;
+    margin: 30px 20px;
+    line-height: 40px;
+    padding: auto;
+    width: max-content;
+}
+
+.Nav-menu-link {
+    padding: 0 8px;
+    background: rgb(189, 128, 17);
+    border: black solid 2px;
+    border-radius: 5px;
+    box-shadow: black 2px 4px 10px 0px;
+}
+
+.Nav-menu-link:hover,
+.Nav-menu-link_active {
+    background: rgb(189, 110, 17);
+    box-shadow: black 4px 8px 20px 0px;
+    transition: background .3s, box-shadow .3s;
+}
+
+.Nav-desp {
+    background: none;
+    border: none;
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+.Titulares {
+    margin: 2em;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.EncabezadoSNosotros {
+    margin-left: 2em;
+}
+.EncabezadoSNosotros p{
+    font-size: 2em;
+    color: white;
+}
+
+.EncabezadoProductos {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+
+.linkDeContacto {
+    display:flex;
+    flex-direction: column;
+    margin-left: 3%;
+    justify-content: center;
+}
+
+.LinkFacebook {
+    background-color: #3b5998;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black ;
+    border-radius: 10px;
+    box-shadow: black 2px 4px 10px 0px;
+    transition: background .3s, box-shadow .3s;
+}
+.LinkFacebook:hover {
+    background: #16419e;
+    box-shadow: black 4px 8px 20px 0px;
+}
+
+.LinkInstagram {
+    background-color: #c32aa3;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black ;
+    border-radius: 10px;
+    box-shadow: black 2px 4px 10px 0px;
+    transition: background .3s, box-shadow .3s;
+}
+.LinkInstagram:hover {
+    background: #b4008d;;
+    box-shadow: black 4px 8px 20px 0px;
+}
+
+.LinkWhatsapp {
+    background-color: #00bb2d;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black ;
+    border-radius: 10px;
+    box-shadow: black 2px 4px 10px 0px;
+    transition: background .3s, box-shadow .3s;
+}
+.LinkWhatsapp:hover {
+    background: #009022;
+    box-shadow: black 4px 8px 20px 0px;
+}
+
+.sliderdoble {
+    width: 100%;
+    overflow: hidden;
+}
+.sliderdoble ul {
+    display:flex;
+    width: 500%;
+    padding-inline-start: 0;
+    animation: transicion 30s infinite alternate;
+    margin: 30px;
+}
+.sliderdoble li {
+    width: 50%;
+}
+.sliderdoble img {
+    width: 40%;
+}
+.lista li {
+    display: flex;
+    justify-content: center;
+}
+
+.data {
+    background-color: rgb(93, 93, 93);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.data-item {
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+}
+
+.formaDeAcceso {
+    background: white;
+    margin-top: 50px;
+    padding: 3px;
+}
+
+#separador {
+    color: black;
+    margin-top: 40px;
+    height: 3px;
+    opacity: 80%;
+}
+
+#separadorNav {
+    color: black;
+    height: 10px;
+    opacity: 80%;
+    margin: 0;
+}
+
+.formaDeRegistro {
+    background: white;
+    margin-top: 50px;
+    padding: 3px;
+}
+
+.formaDeVenta {
+    background: white;
+    margin-top: 50px;
+    padding: 3px;
+}
+
+.insideText {
+    margin-top: 15px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+.campo {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    padding-left: 5px;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.botonesRL {
+    width: 100%;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(189, 128, 17);
+    border: black solid 2px;
+    box-shadow: black 2px 4px 10px 0px;
+}
+
+.botonesRL:hover {
+    background: rgb(189, 110, 17);
+    box-shadow: black 4px 8px 20px 0px;
+    transition: background .3s, box-shadow .3s;
+}
+
+#titulo {
+    font-size: 45px;
+    text-align: center;
+}
+
+.formText {
+    margin-top: 50px;
+    text-align: center;
+    color:white
+}
+
+.botonFile {
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(189, 128, 17);
+    border: black solid 2px;
+    box-shadow: black 2px 4px 10px 0px;
+}
+
+#ponerEV {
+    margin-top: 20px;
+}
+
+
+.grillaProductos {
+    width: 100%;
+}
+
+.grillaProductos img {
+    width: 100%;
+}
+
+.producto__columna {
+    padding: 5px;
+    border-radius: 5px;
+    border: white solid 2px;
+}
+
+.producto__columna:hover {
+    box-shadow: black 2px 4px 10px 0px;
+    transition: background .3s, box-shadow .3s;
+}
+
+.productos .grillaProductos {
+    display: grid;
+    grid-gap: 20px;
+    align-content: space-around;
+    grid-template-columns: repeat(5,1fr);
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.fotoProducto {
+    border-radius: 5px;
+}
+
+.descripcion {
+    color: white;
+}
+
+.precio {
+    color: white;
+}
+
+.tituloProducto {
+    color: white;
+}
+
+
+
+@keyframes transicion{
+    0% { margin-left: 0;}
+    18% { margin-left: 0;}   
+    20% {margin-left: -100%;}
+    38% {margin-left: -100%;}
+    40% {margin-left: -200%;}
+    58% {margin-left: -200%;}
+    60% {margin-left: -300%;}
+    78% {margin-left: -300%;}
+    80% {margin-left: -400%;}
+    100% {margin-left: -400%;}
+}
+
+@media (max-width:1176px) {
+    .Header {
+        height: 120px;
+    }
+    .Logo {
+        margin: 15px 15px;
+        width: 176px;
+        height: 66px;
+    }
+    .Nav-menu {
+        display: flex;
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+    .Nav-menu-item {
+        font-size: 30px;
+        margin: 20px 20px;
+        line-height: 30px;
+        padding: auto;
+        width: max-content;
+    }
+    .data-item {
+        font-size: 17px;
+    }
+    .subida {
+        overflow: scroll;
+    }
+    .productos .grillaProductos {
+        grid-template-columns: repeat(4,1fr);
+    }
+    .EncabezadoProductos {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 922px) {
+    .Header {
+        height: 110px;
+    }
+    .Logo {
+        margin: 10px 10px;
+        width: 147px;
+        height: 58px;
+    }
+    .Nav-menu {
+        display: flex;
+        margin-right: 20px;
+        margin-top: 15px;
+    }
+    .Nav-menu-item {
+        font-size: 25px;
+        margin: 15px 15px;
+        line-height: 25px;
+        padding: auto;
+        width: max-content;
+    }
+    .productos .grillaProductos {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .EncabezadoProductos {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Header {
+        height: 100px;
+    }
+    .Nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        margin-top: 80px;
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 100;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100%-60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .Nav-desp {
+        display: block;
+        margin-right: 10px;
+    }
+    .Nav-menu_visible {
+        left: 0;
+    }
+    .map-responsive iframe {
+        width: 100%;
+    }
+    .data-item {
+        font-size: 12px;
+    }
+    .productos .grillaProductos {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .EncabezadoProductos {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 390px) {
+    .productos .grillaProductos {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .formaDeRegistro {
+        margin: auto;
+        width: 40%;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+    .formaDeAcceso {
+        margin: auto;
+        width: 40%;
+        border-radius: 5px;
+    }
+    .formaDeVenta {
+        margin: auto;
+        width: 40%;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OnlineTuning/AccesoACuenta</title>
+    <link rel="shortcut icon" href="../favicon2.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="accesorio, auto, rosario, led, funda">
+    <meta name="description" content="OnlineTuning es una plataforma de e-comerce, 
+    orientado a la venta de accesorios y repuestos para vehiculos.">
+    <meta name="author" content="Ignacio Martinez">
+    <meta name="robots" content="index">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4d9d0fbf38.js" crossorigin="anonymous"></script>
+    <script defer src="../js/index.js"></script>
+</head>
+<body>
+    <header class="Header">
+        <nav class="Nav">
+            <img src="../OnlineTuning.png" title="Oroño Tuning Car" class="Logo">
+            <button class="Nav-desp">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="Nav-menu">
+                <li class="Nav-menu-item"><a href="../html/index.html" class="Nav-menu-link">Inicio</a></li>
+                <li class="Nav-menu-item"><a href="../html/Productos.html" class="Nav-menu-link">Productos</a></li>
+                <li class="Nav-menu-item"><a href="../html/register.html" class="Nav-menu-link">Registro</a></li>
+                <li class="Nav-menu-item"><a href="../html/venta.html" class="Nav-menu-link Nav-menu-link_active">Vender</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr id="separadorNav">
+    <h2 class="formText">¿Que estas vendiendo?</h2>
+    <hr>
+    <form class="formaDeVenta">
+        <p class="insideText">Describe el producto que estas vendiendo</p>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <input type="text" name="producto" class="campo" placeholder="Ej: taza de rueda VW Gol">
+            </div>
+            <div class="input-contenedor">
+                <input type="text" name="descripcion" class="campo" placeholder="Descripción del articulo">
+            </div>
+            <div class="input-contenedor">
+                <input type="number" name="precio" class="campo" placeholder="$">
+            </div>
+            <div class="subida">
+                <form name="subida-imagenes" type="POST" enctype="multipart/formdata" class="subida">
+                    <input type="file" name="imagen1" />
+                </form>
+            </div>
+            <input type="submit" value="Poner en venta" id="ponerEV" class="botonesRL">
+        </div>
+    </form>
+
+    <footer class="data">
+        <div class="data-item nombre">
+            <p><strong>Online Tuning</strong></p> <br>
+        </div>
+        <div class="data-item email">
+            <p><strong>E-mail:</strong> <br>
+            nacho1054@hotmail.com</p>
+        </div>
+        <div class="data-item tel">
+            <p><strong>Atención cliente:</strong> <br>
+            0341 444-9999</p>
+        </div>
+    </footer>
+</body>
+</html>
