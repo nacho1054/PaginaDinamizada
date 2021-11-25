@@ -16,7 +16,6 @@ const getAllProducts = (req, res)=>{
         if(error){
             console.log(error)
         }else{
-           // const newData = data.filter((info)=> info.category === "running");
            console.log(data)
             res.render("pages/productos",{
                 products:data
@@ -36,15 +35,16 @@ const getForm = (req, res) =>{
 };
 
 const addNewProduct =(req,res)=>{
-    const {name,category,price,description,stock }= req.body
+    const {nombre_producto,precio,stock,descripcion,imagen }= req.body
    
-  databaseConnection.query("INSERT INTO products (name,category,price,description ,stock)VALUES(?,?,?,?,?) ",[name,category,parseFloat(price),description,parseInt(stock)],(error,data)=>{
+  databaseConnection.query("INSERT INTO productosonlinetuning (nombre_producto,precio,stock,descripcion,imagen)VALUES(?,?,?,?,?) ",[nombre_producto,parseFloat(precio),parseInt(stock),descripcion,imagen],(error,data)=>{
         if(error){
             console.log(error)
         }else{
     
            
             res.render("pages/index")
+            console.log("Se agrego nuevo producto")
         }
     })
    

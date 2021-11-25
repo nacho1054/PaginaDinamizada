@@ -67,6 +67,7 @@ body {
     background: rgb(189, 110, 17);
     box-shadow: black 4px 8px 20px 0px;
     transition: background .3s, box-shadow .3s;
+    color: black;
 }
 
 .Nav-desp {
@@ -178,6 +179,7 @@ body {
 .data-item {
     text-align: center;
     font-size: 20px;
+    color: white;
 }
 
 .contenedor {
@@ -261,6 +263,10 @@ body {
 }
 
 #titulo {
+    font-size: 45px;
+    text-align: center;
+}
+#titulo2 {
     font-size: 45px;
     text-align: center;
 }
@@ -377,6 +383,12 @@ body {
     }
     .EncabezadoProductos {
         font-size: 29px;
+    }
+    #titulo {
+        font-size: 40px;
+    }
+    #titulo2 {
+        font-size: 40px;
     }
 }
 
